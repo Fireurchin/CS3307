@@ -1,0 +1,11 @@
+Business class:
+	std::string businessType attribute // impacts demand, volume and volatility
+	int typeAmount global attribute // impacts volume SIGNIFICANTLY
+	int typeAmount local attribute // instantiates global
+	double popsPref attribute // impacts demand
+	double maintenanceCost attribute // daily maintenance deduction
+	double dailyRev attribute // daily revenue
+
+Pops class:
+	int demandPref attribute // RNG counter that can be swayed by factors such as volume
+	std::string popBusType attribute // correlates pop type with business type
